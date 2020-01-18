@@ -1,4 +1,4 @@
-# !/bin/bash 
+#!/bin/bash 
 
 # A simple bash script to move up to desired directory level directly 
 
@@ -25,7 +25,7 @@ function jump()
 	do
 		# find the number of directories to move up to 
 		# reach at target directory 
-		pos=$[$pos+1] 
+		pos=$($pos+1)
 		if [ "$1" = "$dir" ];then
 
 			# length of the path_arr 
@@ -33,7 +33,7 @@ function jump()
 
 			#current working directory 
 			cwd=$PWD 
-			limit=$[$dir_in_path-$pos-1] 
+			limit=$($dir_in_path-$pos-1)
 			for ((i=0; i<limit; i++)) 
 			do
 				cwd=$cwd/.. 
