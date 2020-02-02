@@ -13,7 +13,7 @@ echo "The fibonacci terms are:"
 
 for((i=0;i<n;i++))
 do
-echo -n "$a"
+echo -n "$a "
 fn=$((a+b))
 a=$b
 b=$fn
